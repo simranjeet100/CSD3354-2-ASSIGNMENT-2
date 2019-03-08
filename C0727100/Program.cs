@@ -10,6 +10,8 @@ namespace C0727100
     {
         static void Main(string[] args)
         {
+            int i = 4;
+            int j= 5;
         }
     }
 }
