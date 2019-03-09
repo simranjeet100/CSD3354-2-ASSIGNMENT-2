@@ -10,7 +10,21 @@ namespace C0727100
     {
         static void Main(string[] args)
         {
-            int i = 7;
+           
+        }
+        public class DelegateExercises
+        {
+            public delegate void MyDelegate();
+            void Method()
+            {
+                Console.WriteLine("Method1");
+                Console.ReadLine();
+            }
+            public void Method2()
+            {
+                MyDelegate myDelegate = new MyDelegate(Method2);
+                myDelegate();
+            }
         }
     }
 }
